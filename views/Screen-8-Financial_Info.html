@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- Botón "atrás" Mobile -->
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <!-- Fin Botón "atrás" Mobile -->
+
+        <!-- Title main -->
+        <h1 class="big main noMrgnBottom">Mis Datos</h1>
+        <!-- End title main -->
+        
+        <!-- Tracking -->
+        <div class="trackingMain">
+            <div class="trackingMain__dataNav">
+                    <!-- No se necesita poner números en el tracking, van automaticos por CSS -->
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step dataNav__step--complete"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+                <a href="javascript:void(0)" class="dataNav__step"></a>
+            </div>
+        </div>
+
+        <div class="contentBox">
+            <h2 class="headVinculation">Cristian David Arias</h2>
+            <div class="trackingAlter">
+                <div class="trackingAlter__dataNav">
+                    <a href="javascript:void(0)" class="dataNav__step"></a>
+                    <a href="javascript:void(0)" class="dataNav__step"></a>
+                    <a href="javascript:void(0)" class="dataNav__step dataNav__step--active"></a>
+                    <a href="javascript:void(0)" class="dataNav__step"></a>
+                    <a href="javascript:void(0)" class="dataNav__step"></a>
+                </div>
+            </div>
+            <h3 class="subHeadVinculation">Información financiera.</h3>
+
+            <form action="" class="mrgnTop">
+                <!-- Formulario vinculación Información financiera -->
+                <div class="input">
+                    <label for="valorDeuda">¿Cuál es el valor total de sus deudas?</label>
+                    <input type="text" id="valorDeuda" value="">
+                </div>
+                
+                <div class="input">
+                    <p class="label label--noMrgnTop">
+                        ¿Realiza operaciones y/o Tiene productos financieros en Moneda Extranjera?
+                        <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--textPosition"><span class="icon-dv-tooltipInfo"></span></a>
+                        <div class="tooltip">
+                            <p>
+                                Marque Sí, si usted realiza actividades en moneda extranjera tales como: importaciones, exportaciones, préstamos, pagos
+                                de servicios, inversiones, giros o remesas.
+                            </p>
+                        </div>
+                    </p>
+                    <label class="radio">
+                        Si
+                        <input type="radio" value="" name="operacionesInternacionales"> 
+                        <div class="radio__indicator"></div>
+                    </label>
+                    <label class="radio">
+                        No
+                        <input type="radio" value="" name="operacionesInternacionales">
+                        <div class="radio__indicator"></div>
+                    </label>
+                </div>
+
+                <div class="input checkboxes">
+                    <label>¿Qué tipo de transacciones internacionales realiza?</label>
+                    <div class="multiChecbox">
+                        <label class="checkbox">
+                            Importación
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Exportación
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Préstamos
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Inversiones
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Remesas
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Giros
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Productos
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                        <label class="checkbox">
+                            Pago de servicios
+                            <input type="checkbox">
+                            <div class="checkbox__indicator"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <label for="valorTrx"> 
+                        ¿Cuál es el valor aproximado (en dólares) de dichas transacciones?
+                        <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--textPosition"><span class="icon-dv-tooltipInfo"></span></a>
+                        <div class="tooltip">
+                            <p>
+                                Estime el valor mensual en dólares de las actividades que realiza en moneda extranjera.
+                            </p>
+                        </div>
+                    </label>
+                    <input type="text" id="valorTrx" value="">
+                </div>
+
+                <div class="input">
+                    <label for="paisDestino">¿Cuál es el país destino u origen de sus transacciones?</label>
+                    <input type="text" id="paisDestino" value="">
+                </div>
+
+                <div class="input">
+                    <label for="destinatario">¿Quién es el destinatario o beneficiario de esta transacción?</label>
+                    <input type="text" id="destinatario" value="">
+                </div>
+
+                <div class="input">
+                    <label for="tipoProducto">¿Qué tipo de producto tiene?</label>
+                    <select name="" id="tipoProducto">
+                        <option value="-1" selected="" disabled="">Seleccione una opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="bancoDelProducto">¿En cuál banco tiene el producto financiero en moneda extranjera?</label>
+                    <input type="text" id="bancoDelProducto" value="">
+                </div>
+
+                <div class="input">
+                    <label for="ciudad">¿Cuál es la ciudad?</label>
+                    <input type="text" id="ciudad" value="">
+                </div>
+
+                <div class="input">
+                    <label for="pais">¿Cuál es la ciudad?</label>
+                    <input type="text" id="pais" value="">
+                </div>
+
+                <div class="input">
+                    <label for="numeroProducto">¿Cuál es el número del producto financiero?</label>
+                    <input type="text" id="numeroProducto" value="">
+                </div>
+
+                <div class="input">
+                    <label for="tipoMoneda">¿En qué moneda maneja el producto financiero?</label>
+                    <input type="text" id="tipoMoneda" value="">
+                </div>
+
+                <div class="extraProduct" id="extraProduct">
+                    <a href="javacript:void(0)" class="toggleButton toggleButton--vinculation" id="deleteExtraProduct" onclick="deleteExtraProduct()" title="Eliminar">
+                        <strong>2do producto</strong>
+                        <span class="icon-dv-trash">    </span>
+                    </a>
+
+                    <div class="input">
+                        <label for="bancoDelProducto">¿En cuál banco tiene el producto financiero en moneda extranjera?</label>
+                        <input type="text" id="bancoDelProducto" value="">
+                    </div>
+    
+                    <div class="input">
+                        <label for="ciudad">¿Cuál es la ciudad?</label>
+                        <input type="text" id="ciudad" value="">
+                    </div>
+    
+                    <div class="input">
+                        <label for="pais">¿Cuál es la ciudad?</label>
+                        <input type="text" id="pais" value="">
+                    </div>
+    
+                    <div class="input">
+                        <label for="numeroProducto">¿Cuál es el número del producto financiero?</label>
+                        <input type="text" id="numeroProducto" value="">
+                    </div>
+    
+                    <div class="input">
+                        <label for="tipoMoneda">¿En qué moneda maneja el producto financiero?</label>
+                        <input type="text" id="tipoMoneda" value="">
+                    </div>
+                </div>
+
+                <a href="javacript:void(0)" class="toggleButton toggleButton--vinculation" id="addExtraProduct" onclick="addExtraProduct()" title="Agregar otro producto">
+                    <span class="result__ConfirButton--more">Agregar otro producto</span>
+                    <span class="result__ConfirButton--icon icon-dv-showMore"></span>
+                </a>
+            </form>
+
+        </div>
+
+        <!-- Contenedor y Botones genericos - Siempre poner los botones dentro de contButtons -->
+        <div class="contButtons">
+            <button type="button" class="button button--secondary button--back">Regresar</button>
+            <button type="button" class="button button--primary">Continuar</button>
+        </div>
+        <!-- Contenedor y Botones genericos -->
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
