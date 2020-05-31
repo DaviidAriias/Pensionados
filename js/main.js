@@ -1,6 +1,13 @@
 //Document Ready - Validación DOM
 document.addEventListener("DOMContentLoaded", function() {
     console.log('JS Loaded - Everything OK!');
+
+    setTimeout(function(){
+        var video = document.getElementById('video');
+        video.autoplay = true;
+        video.muted = true;
+        video.play();
+    }, 500);
 });
 
 

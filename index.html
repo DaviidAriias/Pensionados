@@ -21,7 +21,7 @@
         <!-- Fin Botón "atrás" Mobile -->
 
         <!-- Title main -->
-        <h1 class="big main noMrgnBottom">Apertura de cuenta - Muted</h1>
+        <h1 class="big main noMrgnBottom">Apertura de cuenta</h1>
         <!-- End title main -->
         
         <!-- Tracking -->
@@ -39,11 +39,9 @@
             <h2 class="main medium noMrgn">Para continuar con la apertura de su cuenta adquiera su Tarjeta Débito Maestro</h2>
 
             <div class="gifArea">
-                <!-- <img src="../images/Pensionados-GIFs/GIF_DebitoMaestro.gif" alt=""> -->
-                <video id="video" autoplay muted>
-                    <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.webm" type="video/webm">
-                    <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.ogg" type="video/ogg">
+                <video id="video">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.mp4" type="video/mp4">
+                    <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.webm" type="video/webm">
                     Su navegador no admite este archivo.
                 </video>
             </div>
@@ -79,20 +77,11 @@
         <!-- Contenedor y Botones genericos - Siempre poner los botones dentro de contButtons -->
         <div class="contButtons">
             <button type="button" class="button button--secondary">Omitir</button>
-            <button type="button" class="button button--primary" onclick="checkAutoplay()">Adquirir</button>
+            <button type="button" class="button button--primary">Adquirir</button>
         </div>
         <!-- Contenedor y Botones genericos -->
 
-        <!-- <script src="js/main.js"></script> -->
-        <script type="text/javascript">
-            function load() {
-                var video = document.getElementById('video');
-                video.autoplay = true;
-                video.play();
-            }
-            window.onload = load;
-        </script>
-
+        <script src="js/main.js"></script>
     </section>
 </body>
 
