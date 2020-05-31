@@ -1,6 +1,9 @@
 //Document Ready - Validación DOM
 document.addEventListener("DOMContentLoaded", function() {
     console.log('JS Loaded - Everything OK!');
+
+    let video = document.getElementById('animation'); 
+    video.play(); 
 });
 
 
