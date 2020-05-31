@@ -21,7 +21,7 @@
         <!-- Fin Botón "atrás" Mobile -->
 
         <!-- Title main -->
-        <h1 class="big main noMrgnBottom">Apertura de cuenta - Video JS Play</h1>
+        <h1 class="big main noMrgnBottom">Apertura de cuenta - Video JS Play Load</h1>
         <!-- End title main -->
         
         <!-- Tracking -->
@@ -86,7 +86,8 @@
         <!-- <script src="js/main.js"></script> -->
         <script type="text/javascript">
             var video = document.getElementById('video');
-            video.autoplay = true;
+            video.autoplay = false;
+            video.load();
             
             function checkAutoplay() { 
                 video.play();
