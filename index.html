@@ -21,7 +21,7 @@
         <!-- Fin Botón "atrás" Mobile -->
 
         <!-- Title main -->
-        <h1 class="big main noMrgnBottom">Apertura de cuenta - Loaded</h1>
+        <h1 class="big main noMrgnBottom">Apertura de cuenta - Muted</h1>
         <!-- End title main -->
         
         <!-- Tracking -->
@@ -40,7 +40,7 @@
 
             <div class="gifArea">
                 <!-- <img src="../images/Pensionados-GIFs/GIF_DebitoMaestro.gif" alt=""> -->
-                <video id="video" autoplay>
+                <video id="video" autoplay muted>
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.webm" type="video/webm">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.ogg" type="video/ogg">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.mp4" type="video/mp4">
@@ -87,8 +87,8 @@
         <script type="text/javascript">
             function load() {
                 var video = document.getElementById('video');
+                video.autoplay = true;
                 video.play();
-             alert("evento load detectado!");
             }
             window.onload = load;
         </script>
