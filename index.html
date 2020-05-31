@@ -21,7 +21,7 @@
         <!-- Fin Botón "atrás" Mobile -->
 
         <!-- Title main -->
-        <h1 class="big main noMrgnBottom">Apertura de cuenta - Videos</h1>
+        <h1 class="big main noMrgnBottom">Apertura de cuenta - Video JS</h1>
         <!-- End title main -->
         
         <!-- Tracking -->
@@ -40,7 +40,7 @@
 
             <div class="gifArea">
                 <!-- <img src="../images/Pensionados-GIFs/GIF_DebitoMaestro.gif" alt=""> -->
-                <video id="animation" autoplay="autoplay" width="100%">
+                <video id="video">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.webm" type="video/webm">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.ogg" type="video/ogg">
                     <source src="images/Pensionados-GIFs/GIF_DebitoMaestro.mp4" type="video/mp4">
@@ -79,11 +79,19 @@
         <!-- Contenedor y Botones genericos - Siempre poner los botones dentro de contButtons -->
         <div class="contButtons">
             <button type="button" class="button button--secondary">Omitir</button>
-            <button type="button" class="button button--primary">Adquirir</button>
+            <button type="button" class="button button--primary" onclick="checkAutoplay()">Adquirir</button>
         </div>
         <!-- Contenedor y Botones genericos -->
 
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script type="text/javascript">
+            var video = document.getElementById('video');
+            video.autoplay = true;
+
+            function checkAutoplay() { 
+                alert(video.autoplay);
+            } 
+        </script>
     </section>
 </body>
 
