@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function(){
         var video = document.getElementById('video');
+        video.disableRemotePlayback = true;
         video.autoplay = true;
         video.muted = true;
         video.play();
